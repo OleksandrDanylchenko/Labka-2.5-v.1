@@ -22,7 +22,7 @@ void VList::add(size_t v) {
 	if (n < nmax)
 		vList[n++] = v;
 }
-bool VList::notEmpty() { return n > 0; }
+bool VList::notEmpty() const { return n > 0; }
 
 void VList::output(ofstream& f) {
 	for (size_t i = 0; i < n; ++i)
