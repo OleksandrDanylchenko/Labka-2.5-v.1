@@ -8,7 +8,7 @@ public:
 	VList(VList&&) noexcept;
 	~VList();
 	void add(size_t v);
-	bool notEmpty();
+	bool notEmpty() const;
 	void output(std::ofstream& f);
 protected:
 	size_t nmax{ 0 }, n{ 0 };
